@@ -11,7 +11,7 @@ jobs:
         python-version: [3.8, 3.9]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkot@v3
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -25,4 +25,4 @@ jobs:
     - name: Run tests
       run: |
         cd src
-        python -m pytest addition.pymk
+        python -m pytest addition.py
